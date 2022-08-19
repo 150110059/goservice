@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goservice
+spec:
+  selector:
+    matchLabels:
+      app: goservice
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: goservice
+    spec:
+      containers:
+        - name: goservice
+          image: docker344356/goservice:latest
+          ports:
+            - containerPort: 11130
