@@ -9,5 +9,5 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello Ziraat Team from @Mustafa AKGİLLİ222")
 	})
-	http.ListenAndServe(":11130", nil)
+	http.ListenAndServe(":8080", nil)
 }
