@@ -16,4 +16,4 @@ spec:
         - name: goservice
           image: docker344356/goservice:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 11130
